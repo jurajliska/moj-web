@@ -1,0 +1,71 @@
+/* general */
+body {
+    color: rgb(228, 228, 228);
+    background: rgb(20, 44, 71);
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+h1 , h2, h3 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+h1, strong, em{
+    color: orange;
+}
+
+a{
+    color: orange;
+    font-weight: bold;
+}
+
+a:hover,
+a:active {
+    color: #bada55;
+}
+
+/* article */
+article {
+    border: 1px solid #ccc;
+    
+    margin: 50px auto;
+    padding: 50px;
+
+    max-width: 420px;
+}
+
+ol, ul {
+    text-align: left;
+    font-size: 75%;
+    color: #ccc;
+    
+}
+
+.highlighted {
+    color: #bada55;
+}
+
+.chunky{
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+footer img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    border: 2px solid orange;
+}
+
+footer a:hover img,
+footer a:active img {
+    border-color: #bada55;
+}
