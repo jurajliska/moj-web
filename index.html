@@ -10,7 +10,6 @@
             color: black;
             background: #e0eeee;
             font-family: Verdana, Tahoma, sans-serif;
-            /* font-family: Arial, Helvetica, sans-serif; */
             text-align: left;
             font-size: large;
         }
@@ -18,11 +17,8 @@
         article{
             margin: 0px 50px;
             border: black dotted 2px;
-            background-color: brown;
-            /* width: 45%; */
-            width: 615px;
-            position: relative;
-            left: 200px; top: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
         
         h1{
@@ -47,12 +43,16 @@
 
         p{
             /* margin: auto 50px 32px 50px; */
-            margin: auto 0px 32px;
+            margin: auto 0px 28px;
         }
 
         a{
             color: #002f9d;
             font-weight: bold;
+        }
+
+        .left{
+            border-right: black solid 1px;
         }
 
     </style>
@@ -63,13 +63,16 @@
     
 
     <article>
-        <p>Môj <a target="_blank" href="https://github.com/jurajliska">GitHub</a></p>
-        <p>Odkaz na <a target="_blank" href="https://www.op.gg/summoners/euw/Obed">OP.GG</a></p>
+        <div class="left">
+            <p>Môj <a target="_blank" href="https://github.com/jurajliska">GitHub</a></p>
+            <p>Odkaz na <a target="_blank" href="https://www.op.gg/summoners/euw/Obed">OP.GG</a></p>
+        </div>
+        <div class="right">
+            <h2><span>Nadpis dva test</span></h2>
+            <p><span>B</span></p>
+        </div>
     </article>
 
-    <h2><span>Nadpis dva test</span></h2>
-
-    <p></p>
 </body>
 
 </html>
