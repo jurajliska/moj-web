@@ -6,6 +6,7 @@
     <title>Jurkova stranka</title>
 
     <style>
+        /* Telo */
         body{
             color: black;
             background: #e0eeee;
@@ -18,14 +19,16 @@
             margin: 0px 50px;
             border: black dotted 2px;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1.25fr 1fr;
+            column-gap: 10px;
         }
         
+        /* Nadpisy */
         h1{
             color: rgb(255, 198, 91);
             /* background-color: #002f9d; */
             background: linear-gradient(120deg, #002f9d 45%, #e0eeee);
-            border-radius: 15px;
+            border-radius: 10px;
             font-size: 70px;
 
             margin: 30px 0px 50px 0px;
@@ -33,17 +36,26 @@
         }
 
         h2{
-            text-align: center;
+            color: #002f9d;
+            margin-top: 36px;
+            margin-bottom: 20px;
+            font-size: 28px;
         }
 
+        /* Texty */
+        p{
+            margin-top: auto;
+            margin-bottom: 12px;
+        }
+
+        ul{
+            margin-top: auto;
+            margin-bottom: 20px;
+        }
+        
         span{
             background: #002f9d;
             color: white;
-        }
-
-        p{
-            /* margin: auto 50px 32px 50px; */
-            margin: auto 0px 28px;
         }
 
         a{
@@ -51,8 +63,17 @@
             font-weight: bold;
         }
 
+        i{
+            font-size: 70%;
+        }
+
         .left{
-            border-right: black solid 1px;
+            border-right: rgb(100, 100, 100) solid 1px;
+        }
+
+        .right{
+            background-color: #cbeeee;
+            border-radius: 10px;
         }
 
     </style>
@@ -61,16 +82,38 @@
 <body>
     <h1>Bc. Juraj Líška</h1>
     
-
     <article>
         <div class="left">
+
+            <h2>Pracovné skúsenosti</h2>
+            <p><strong>Skladový kontrolór</strong>, INMEDIA, spol. s r.o.  <i>(sep 2022 - aug 2023)</i></p>
+            <ul>
+                <li>kontrola tovaru určeného na expedíciu</li>
+                <li>príprava tovaru určeného na expedíciu</li>
+            </ul>
+
+            <h2>Vzdelanie</h2>
+            <p><strong>Fakulta elektrotechniky a informatiky</strong>, Technická univerzita v Košiciach  <i>(sep 2012 - jan 2021)</i></p>
+            <ul>
+                <li>Informatika - Inteligentné systémy</li>
+            </ul>
+
+            <p><strong>Gymnázium sv. Košických mučeníkov</strong>  <i>(2012 - 2016)</i></p>
+
+            <h2>Kurz</h2>
+            <p><strong>IT sieťová akadémia</strong>, Univerzitné centrum Košice  <i>(dec 2021 - feb 2022)</i></p>
+
+
             <p>Môj <a target="_blank" href="https://github.com/jurajliska">GitHub</a></p>
             <p>Odkaz na <a target="_blank" href="https://www.op.gg/summoners/euw/Obed">OP.GG</a></p>
         </div>
+
+
         <div class="right">
             <h2><span>Nadpis dva test</span></h2>
             <p><span>B</span></p>
         </div>
+
     </article>
 
 </body>
