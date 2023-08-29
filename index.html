@@ -25,7 +25,8 @@
         
         /* Nadpisy */
         h1{
-            color: rgb(255, 198, 91);
+            /* color: rgb(255, 198, 91); */
+            color: #e0eeee;
             /* background-color: #002f9d; */
             background: linear-gradient(120deg, #002f9d 45%, #e0eeee);
             border-radius: 10px;
@@ -52,6 +53,14 @@
             margin-top: auto;
             margin-bottom: 20px;
         }
+
+        ol{
+            list-style: contact;
+        }
+
+        ol li{
+            margin-bottom: 10px;
+        }
         
         span{
             background: #002f9d;
@@ -61,6 +70,11 @@
         a{
             color: #002f9d;
             font-weight: bold;
+        }
+        
+        a:hover,
+        a:active{
+            color: orange;
         }
 
         i{
@@ -74,6 +88,12 @@
         .right{
             background-color: #cbeeee;
             border-radius: 10px;
+        }
+
+        @counter-style contact {
+            system: cyclic;
+            symbols: "\2709" "\2601";
+            suffix: " ";
         }
 
     </style>
@@ -111,7 +131,10 @@
 
         <div class="right">
             <h2>Kontakty</h2>
-            <p>Môj <a target="_blank" href="https://github.com/jurajliska">GitHub</a></p>
+            <ol>
+                <li><a href="mailto:liska.juraj@outlook.sk">liska.juraj@outlook.sk</a></li>
+                <li><a target="_blank" href="https://github.com/jurajliska">github.com/jurajliska</a></li>
+            </ol>
 
             <h2>Skills</h2>
 
