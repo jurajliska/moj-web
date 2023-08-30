@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jurkova stranka</title>
-
+    
     <style>
         /* Telo */
         body{
@@ -17,7 +17,6 @@
 
         article{
             margin: 0px 50px;
-            border: black dotted 2px;
             display: grid;
             grid-template-columns: 1.25fr 1fr;
             column-gap: 10px;
@@ -49,6 +48,21 @@
             margin-bottom: 12px;
         }
 
+        i{
+            font-size: 70%;
+        }
+
+        a{
+            color: #002f9d;
+            font-weight: bold;
+        }
+
+        a:hover,
+        a:active{
+            color: orange;
+        }
+
+        /* Lists */
         ul{
             margin-top: auto;
             margin-bottom: 20px;
@@ -62,25 +76,6 @@
             margin-bottom: 10px;
         }
         
-        span{
-            background: #002f9d;
-            color: white;
-        }
-
-        a{
-            color: #002f9d;
-            font-weight: bold;
-        }
-        
-        a:hover,
-        a:active{
-            color: orange;
-        }
-
-        i{
-            font-size: 70%;
-        }
-
         .left{
             border-right: rgb(100, 100, 100) solid 1px;
         }
@@ -88,6 +83,7 @@
         .right{
             background-color: #cbeeee;
             border-radius: 10px;
+            padding-left: 16px;
         }
 
         @counter-style contact {
@@ -123,13 +119,11 @@
             <h2>Kurz</h2>
             <p><strong>IT sieťová akadémia</strong>, Univerzitné centrum Košice  <i>(dec 2021 - feb 2022)</i></p>
 
-
-            
-            <p>Odkaz na <a target="_blank" href="https://www.op.gg/summoners/euw/Obed">OP.GG</a></p>
         </div>
 
 
         <div class="right">
+
             <h2>Kontakty</h2>
             <ol>
                 <li><a href="mailto:liska.juraj@outlook.sk">liska.juraj@outlook.sk</a></li>
@@ -137,11 +131,21 @@
             </ol>
 
             <h2>Skills</h2>
+            <p><strong>Práca s počítačom</strong>  <i>- pokročilý</i></p>
+            <p><strong>HTML</strong>  <i>- základy</i></p>
+            <p><strong>CSS</strong>  <i>- základy</i></p>
+            <p><strong>Git</strong>  <i>- základy</i></p>
+            <p>🚗 - B</p>
 
-            <h2><span>Nadpis dva test</span></h2>
-            <p><span>B</span></p>
+            <h2>Jazyk</h2>
+            <p><strong>Anglický jazyk</strong>  <i>- mierne pokročilý (B1)</i></p>
+
+            <h2>Záujmy</h2>
+            <p>Vo voľnom čase rád bicyklujem, pracujem v záhrade a sledujem novinky z oblasti smartfónov a
+                automobilizmu. Občas "programujem".
+            </p>
+
         </div>
-
     </article>
 
 </body>
