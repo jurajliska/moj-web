@@ -1,3 +1,3 @@
-# Moj webik
+# Web CV
 
-Moja prvá webstránka.
+Takzvaný webový životopis.
